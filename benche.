@@ -1,0 +1,28 @@
+     Running benches/my_benchmark.rs (target/release/deps/my_benchmark-d10868bd922e99d2)
+Benchmarking sum_vec_1000: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.2s, enable flat sampling, or reduce sample count to 50.
+sum_vec_1000            time:   [1.4199 ms 1.4241 ms 1.4286 ms]
+                        change: [-0.9411% -0.5448% -0.1609%] (p = 0.01 < 0.05)
+                        Change within noise threshold.
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+sum_vec_10000           time:   [20.271 ms 20.301 ms 20.333 ms]
+                        change: [+0.0353% +0.2281% +0.4220%] (p = 0.02 < 0.05)
+                        Change within noise threshold.
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking sum_vec_100000: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 40.1s, or reduce sample count to 10.
+sum_vec_100000          time:   [397.05 ms 398.20 ms 399.50 ms]
+                        change: [-2.0184% -1.1944% -0.3805%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking sum_vec_1000000: Warming up for 3.0000 s
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 953.5s, or reduce sample count to 10.
